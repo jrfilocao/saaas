@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SArcasm As A Service (SAAAS)</title>
+
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@saaas"/>
+    <meta name="og:url" content="https://saaas.me"/>
+    <meta name="og:title" content="SArcasm As A Service"/>
+    <meta name="og:description" content="SAAAS provides a modern, RESTful, scalable solution to the common problem of making a sharp and often satirical or ironic utterance designed to cut or give pain."/>
+
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet"/>
+    <link href="/main.css" rel="stylesheet"/>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg"/>
+    <link rel="icon" type="image/png" href="favicon.png"/>
+</head>
+
+    <body style="">
+        <div class="container">
+            <div class="hero-unit">
+                <h1>SAAAS</h1>
+                <h2>SArcasm As A Service</h2>
+                <p><em>v1.0.0</em></p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="content" style="margin-left:50px;">
+                <h2 id="introduction">Introduction</h2>
+                <p>SAAAS (SArcasm As A Service) provides a modern, RESTful, scalable solution to the common problem of making a sharp and often satirical or ironic utterance designed to cut or give pain.</p>
+
+                <h2 id="api">API</h2>
+
+                <h3 id="contentnegotiation">Content Negotiation</h3>
+
+                <p>SAAAS will respond to the following 'Accept:' values with appropriate content</p>
+
+                <ul>
+                    <li>text/html - Content will be returned as an HTML page with a twitter bootstrap hero unit, containing the message and the salutation.</li>
+                    <li>text/plain - Content will be returned as a plain string.</li>
+                    <li>
+                        application/json - Content will be returned as a JSON object <code>{ message: 'message', salutation: 'salutation' }</code>
+                    </li>
+                    <li>application/xml - Content will be returned as a XML document.</li>
+                </ul>
+
+                <h3 id="operations">Resources</h3>
+                <table class="table" id="resources">
+                    <tr>
+                        <th>Path</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>/calling/:from</td>
+                        <td>Returns content of the form 'If your phone doesn't ring... It's me. Best, :from'</td>
+                    </tr>
+                    <tr>
+                        <td>/suicide/:from</td>
+                        <td>Returns content of the form 'If I wanted to kill myself, I would climb your ego and jump to your IQ. Best, :from'</td>
+                    </tr>
+                    <tr>
+                        <td>/beginning/:from</td>
+                        <td>Returns content of the form 'It's beginning to look a lot like fuck this. Best, :from'</td>
+                    </tr>
+                    <tr>
+                        <td>/confirmation/:from</td>
+                        <td>Returns content of the form 'I would like to confirm that I do not care. Best, :from'</td>
+                    </tr>
+                    <tr>
+                        <td>/challenge/:name/:from</td>
+                        <td>Returns content of the form 'When I said how stupid can :name be? It was not a challenge. Love, :from'</td>
+                    </tr>
+                    <tr>
+                        <td>/repeat/:from</td>
+                        <td>Returns content of the form 'No, you do not have to repeat yourself... I was ignoring you the first time. Best, :from'</td>
+                    </tr>
+                    <tr>
+                        <td>/missing/:from</td>
+                        <td>Returns content of the form 'Not sure if I miss you or I miss insulting you. Love, :from'</td>
+                    </tr>
+                    <tr>
+                        <td>/busy/:name/:from</td>
+                        <td>Returns content of the form 'Hi :name, I am busy right now, can I ignore you some other time? Best, :from'</td>
+                    </tr>
+                    <tr>
+                        <td>/dollar/:from</td>
+                        <td>Returns content of the form 'If I had a dollar for every smart thing you say... I would be poor. Best, :from'</td>
+                    </tr>
+                    <tr>
+                        <td>/sarcasm/:from</td>
+                        <td>Returns content of the form 'I am not sarcastic. I am just intelligent beyond your understanding. Best, :from'</td>
+                    </tr>                    <tr>
+                        <td>/bye/:from</td>
+                        <td>Returns content of the form 'Goodbye and please forget I exist. Best, :from'</td>
+                    </tr>
+                </table>
+                <h2 id="contributions">Contributions</h2>
+                <p>All contributions are very welcome.</p>
+                <p>Fork me soon on github</p>
+            </div>
+        </div>
+    </body>
+</html>
