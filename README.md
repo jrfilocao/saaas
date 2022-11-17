@@ -7,11 +7,13 @@ a sharp and often satirical or ironic utterance designed to cut or give pain.
 
 Please see https://saaas.me for API documentation and examples.
 
-## Starting the app
+### Starting the app
 ```
 ./gradlew clean build bootRun
 ```
 
 * Go to [http://localhost:8080](http://localhost:8080)
 
-All contributions are very welcome. Inspired by https://foaas.com.
+### Contributions
+
+All contributions are very welcome. [Fork me on github](https://github.com/jrfilocao/saaas)
